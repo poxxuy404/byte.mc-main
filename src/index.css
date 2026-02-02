@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Bytemc.uz Design System - Dim colors, amber accents, gaming UI */
+
+@layer base {
+  :root {
+    --background: 30 25% 94%;
+    --foreground: 30 25% 5%;
+
+    --card: 30 12% 86%;
+    --card-foreground: 30 25% 8%;
+
+    --popover: 30 15% 89%;
+    --popover-foreground: 30 25% 5%;
+
+    --primary: 38 75% 42%;
+    --primary-foreground: 30 10% 98%;
+
+    --secondary: 30 18% 72%;
+    --secondary-foreground: 30 25% 12%;
+
+    --muted: 30 12% 68%;
+    --muted-foreground: 30 15% 32%;
+
+    --accent: 38 65% 45%;
+    --accent-foreground: 30 10% 98%;
+
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 18% 76%;
+    --input: 30 18% 82%;
+    --ring: 38 75% 42%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 30 15% 88%;
+    --sidebar-foreground: 30 25% 10%;
+    --sidebar-primary: 38 75% 42%;
+    --sidebar-primary-foreground: 30 10% 98%;
+    --sidebar-accent: 30 18% 80%;
+    --sidebar-accent-foreground: 30 25% 12%;
+    --sidebar-border: 30 18% 76%;
+    --sidebar-ring: 38 75% 42%;
+
+    /* Custom tokens - Light shadows */
+    --glass: 30 18% 96% / 0.75;
+    --glass-border: 30 15% 55% / 0.4;
+    --glow: 38 75% 42% / 0.25;
+    --shadow-sm: 0 1px 2px rgba(70, 40, 20, 0.06);
+    --shadow-md: 0 4px 8px rgba(70, 40, 20, 0.1), 0 2px 4px rgba(70, 40, 20, 0.05);
+    --shadow-lg: 0 10px 20px rgba(70, 40, 20, 0.12), 0 4px 8px rgba(70, 40, 20, 0.08);
+    --shadow-xl: 0 20px 40px rgba(70, 40, 20, 0.15), 0 8px 16px rgba(70, 40, 20, 0.1);
+    --shadow-2xl: 0 25px 50px rgba(70, 40, 20, 0.18);
+  }
+
+  .dark {
+    --background: 30 8% 8%;
+    --foreground: 30 10% 92%;
+
+    --card: 30 8% 12%;
+    --card-foreground: 30 10% 92%;
+
+    --popover: 30 8% 10%;
+    --popover-foreground: 30 10% 92%;
+
+    --primary: 38 70% 55%;
+    --primary-foreground: 30 10% 5%;
+
+    --secondary: 30 8% 18%;
+    --secondary-foreground: 30 10% 85%;
+
+    --muted: 30 8% 20%;
+    --muted-foreground: 30 8% 55%;
+
+    --accent: 38 60% 60%;
+    --accent-foreground: 30 10% 5%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 22%;
+    --ring: 38 70% 55%;
+
+    --sidebar-background: 30 8% 10%;
+    --sidebar-foreground: 30 10% 85%;
+    --sidebar-primary: 38 70% 55%;
+    --sidebar-primary-foreground: 30 10% 5%;
+    --sidebar-accent: 30 8% 15%;
+    --sidebar-accent-foreground: 30 10% 85%;
+    --sidebar-border: 30 8% 18%;
+    --sidebar-ring: 38 70% 55%;
+
+    /* Custom tokens - dark */
+    --glass: 30 8% 15% / 0.6;
+    --glass-border: 30 8% 30% / 0.4;
+    --glow: 38 70% 55% / 0.25;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    box-shadow: inset 0 0 0 1px hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-[hsl(var(--glass))] backdrop-blur-md border border-[hsl(var(--glass-border))] shadow-[var(--shadow-md)];
+  }
+
+  .glass-button {
+    @apply glass hover:bg-[hsl(var(--glass))] transition-all duration-300 hover:shadow-[0_0_25px_hsl(var(--glow))] hover:border-primary/40;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply bg-card shadow-[var(--shadow-md)] rounded-lg border border-[hsl(var(--border))];
+  }
+
+  .card-elevated {
+    @apply bg-card shadow-[var(--shadow-lg)] rounded-lg border border-[hsl(var(--border))];
+  }
+
+  .card-hover {
+    @apply card transition-all duration-300 hover:shadow-[var(--shadow-xl)] hover:border-primary/30;
+  }
+
+  .button-primary {
+    @apply bg-primary text-primary-foreground shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-lg)] transition-all duration-300;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-up-delay-1 {
+    animation: fadeUp 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-3 {
+    animation: fadeUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
