@@ -9,37 +9,37 @@ const staffCategories = [
     titleKey: "admins.categories.owners",
     icon: Crown,
     members: [
-      { name: "ByteKing", role: "Founder & CEO", online: true },
-      { name: "MCMaster", role: "Co-Founder", online: true },
+      { name: "ByteKing", roleKey: "admins.roles.founderCEO", online: true },
+      { name: "MCMaster", roleKey: "admins.roles.coFounder", online: true },
     ],
   },
   {
     titleKey: "admins.categories.administrators",
     icon: Shield,
     members: [
-      { name: "AdminPro", role: "Head Admin", online: true },
-      { name: "ServerGuard", role: "Senior Admin", online: false },
-      { name: "TechWizard", role: "Technical Admin", online: true },
+      { name: "AdminPro", roleKey: "admins.roles.headAdmin", online: true },
+      { name: "ServerGuard", roleKey: "admins.roles.seniorAdmin", online: false },
+      { name: "TechWizard", roleKey: "admins.roles.technicalAdmin", online: true },
     ],
   },
   {
     titleKey: "admins.categories.moderators",
     icon: Sword,
     members: [
-      { name: "ModMaster", role: "Head Mod", online: true },
-      { name: "FairPlay", role: "Senior Mod", online: true },
-      { name: "Guardian", role: "Moderator", online: false },
-      { name: "Protector", role: "Moderator", online: true },
-      { name: "Watchdog", role: "Moderator", online: false },
+      { name: "ModMaster", roleKey: "admins.roles.headMod", online: true },
+      { name: "FairPlay", roleKey: "admins.roles.seniorMod", online: true },
+      { name: "Guardian", roleKey: "admins.roles.moderator", online: false },
+      { name: "Protector", roleKey: "admins.roles.moderator", online: true },
+      { name: "Watchdog", roleKey: "admins.roles.moderator", online: false },
     ],
   },
   {
     titleKey: "admins.categories.helpers",
     icon: Star,
     members: [
-      { name: "Helper1", role: "Helper", online: true },
-      { name: "NewHelper", role: "Trial Helper", online: false },
-      { name: "Support_Pro", role: "Helper", online: true },
+      { name: "Helper1", roleKey: "admins.roles.helper", online: true },
+      { name: "NewHelper", roleKey: "admins.roles.trialHelper", online: false },
+      { name: "Support_Pro", roleKey: "admins.roles.helper", online: true },
     ],
   },
 ];
@@ -106,7 +106,7 @@ const Admins = () => {
                           <h3 className="font-display font-bold text-foreground group-hover:text-primary transition-colors">
                             {member.name}
                           </h3>
-                          <p className="text-sm text-muted-foreground">{member.role}</p>
+                          <p className="text-sm text-muted-foreground">{t(member.roleKey)}</p>
                         </div>
                       </div>
                     </div>

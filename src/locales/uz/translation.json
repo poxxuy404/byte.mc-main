@@ -9,7 +9,8 @@
   },
   "playNow": "Hozir o'ynash",
   "common": {
-    "copied": "Nusxa olindi!"
+    "copied": "Nusxa olindi!",
+    "live": "ONLAYN"
   },
   "notFound": {
     "message": "Sahifa topilmadi",
@@ -32,11 +33,11 @@
     "description": "Biz premium xususiyatlar va ixtisoslashgan qo'llab-quvvatllash bilan eng yaxshi Minecraft tajribasini taqdim etamiz.",
     "boxpvp": {
       "title": "BoxPVP",
-      "description": "Intense player vs player combat with unique kits and rewards."
+      "description": "O'yinchilarga qarshi intensiv jang noyob to'plamlar va mukofotlar bilan."
     },
     "survival": {
       "title": "Survival",
-      "description": "Classic survival experience with custom plugins and events."
+      "description": "Klassik survival tajribasi maxsus plaginlar va tadbirlar bilan."
     },
     "community": {
       "title": "Faol Jamoa",
@@ -44,15 +45,15 @@
     },
     "latency": {
       "title": "Kam Kechikish",
-      "description": "Optimized servers for smooth gameplay experience."
+      "description": "Silliq o'yin tajribasining uchun optimallashtirilgan serverlar."
     },
     "ranking": {
       "title": "Reytinglar",
-      "description": "Climb the ranks and unlock exclusive perks."
+      "description": "Reitingda ko'tarilish va eksklyuziv imtiyozlarni ochish."
     },
     "fairplay": {
       "title": "Adil o'yin",
-      "description": "Anti-cheat systems to ensure fair competition."
+      "description": "Adolatli raqobatni ta'minlash uchun anti-cheat tizimlari."
     }
   },
   "cta": {
@@ -226,10 +227,91 @@
       "moderators": "Moderatorlar",
       "helpers": "Yordamchilar"
     },
+    "roles": {
+      "founderCEO": "Ta'sischi va CEO",
+      "coFounder": "Hamta'sischi",
+      "headAdmin": "Bosh administrator",
+      "seniorAdmin": "Katta administrator",
+      "technicalAdmin": "Texnik administrator",
+      "headMod": "Bosh moderator",
+      "seniorMod": "Katta moderator",
+      "moderator": "Moderator",
+      "helper": "Yordamchi",
+      "trialHelper": "Stajyor yordamchi"
+    },
     "cta": {
       "title": "Jamoaga qo'shilmoqchimisiz?",
       "description": "Biz doimo sodiq o'yinchilarni izlaymiz. Xodimlarga arizalar Discord orqali amalga oshiriladi.",
       "apply": "Discord orqali ariza yuborish"
+    }
+  },
+  "gallery": {
+    "titleStart": "Server",
+    "titleHighlight": "Galereyasi",
+    "description": "Bizning chiroyli olamlar va o'yin rejimlarini o'rganib chiqing.",
+    "placeholder": "Galereya tassviri",
+    "images": {
+      "0": {
+        "title": "Spawn Maydoni",
+        "description": "Bizning chiroyli asosiy spawn maxsus qurilishlar bilan"
+      },
+      "1": {
+        "title": "PvP Arena",
+        "description": "Raqobatna jang maydonlari"
+      },
+      "2": {
+        "title": "Survival Olami",
+        "description": "Keng o'rganish uchun tayyorlik"
+      },
+      "3": {
+        "title": "Tadbirlar",
+        "description": "Muntazam jamoa tadbirlari"
+      },
+      "4": {
+        "title": "Savdo Tumani",
+        "description": "O'yinchilarga egalik qilgan iqtisodiyot"
+      }
+    }
+  },
+  "login": {
+    "register": {
+      "title": "Ro'yxatdan o'tish",
+      "subtitle": "Yangi akkaunt yarating",
+      "name": "Ism",
+      "namePlaceholder": "Ismingizni kiriting",
+      "email": "Email",
+      "password": "Parol",
+      "confirmPassword": "Parolni tasdiqlang",
+      "button": "Ro'yxatdan o'tish",
+      "haveAccount": "Akkauntingiz bormi?",
+      "loginLink": "Kirish"
+    },
+    "login": {
+      "title": "Xush kelibsiz",
+      "subtitle": "Akkauntingizga kiring",
+      "email": "Email",
+      "password": "Parol",
+      "remember": "Eslab qolish",
+      "forgotPassword": "Parolni unutdingizmi?",
+      "button": "Kirish",
+      "noAccount": "Akkauntingiz yo'qmi?",
+      "registerLink": "Ro'yxatdan o'tish"
+    },
+    "forgot": {
+      "back": "Orqaga",
+      "title": "Parolni tiklash",
+      "subtitle": "Email manzilingizni kiriting",
+      "email": "Email",
+      "button": "Yuborish",
+      "sent": "Email yuborildi!",
+      "checkEmail": "Parolni tiklash uchun emailingizni tekshiring"
+    },
+    "verify": {
+      "title": "Tasdiqlash",
+      "subtitle": "Emailingizga yuborilgan kodni kiriting",
+      "button": "Tasdiqlash",
+      "noCode": "Kod kelmadimi?",
+      "resend": "Qayta yuborish"
     }
   }
 }

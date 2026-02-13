@@ -1,46 +1,28 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
-const galleryImages = [
-  {
-    id: 1,
-    title: "Spawn Area",
-    description: "Our beautiful main spawn with custom builds",
-  },
-  {
-    id: 2,
-    title: "PvP Arena",
-    description: "Competitive battle grounds",
-  },
-  {
-    id: 3,
-    title: "Survival World",
-    description: "Vast exploration awaits",
-  },
-  {
-    id: 4,
-    title: "Events",
-    description: "Regular community events",
-  },
-  {
-    id: 5,
-    title: "Shop District",
-    description: "Player-run economy",
-  },
+const galleryImagesKeys = [
+  { id: 1, titleKey: "gallery.images.0.title", descriptionKey: "gallery.images.0.description" },
+  { id: 2, titleKey: "gallery.images.1.title", descriptionKey: "gallery.images.1.description" },
+  { id: 3, titleKey: "gallery.images.2.title", descriptionKey: "gallery.images.2.description" },
+  { id: 4, titleKey: "gallery.images.3.title", descriptionKey: "gallery.images.3.description" },
+  { id: 5, titleKey: "gallery.images.4.title", descriptionKey: "gallery.images.4.description" },
 ];
 
 export function GallerySection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <section className="py-24 bg-card/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Server <span className="text-gradient">Gallery</span>
+            {t("gallery.titleStart")} <span className="text-gradient">{t("gallery.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Explore our beautifully crafted worlds and game modes.
+            {t("gallery.description")}
           </p>
         </div>
 
@@ -55,22 +37,22 @@ export function GallerySection() {
                     {activeIndex + 1}
                   </span>
                 </div>
-                <p className="text-muted-foreground">Gallery Image</p>
+                <p className="text-muted-foreground">{t("gallery.placeholder")}</p>
               </div>
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
               <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                {galleryImages[activeIndex].title}
+                {t(galleryImagesKeys[activeIndex].titleKey)}
               </h3>
               <p className="text-muted-foreground">
-                {galleryImages[activeIndex].description}
+                {t(galleryImagesKeys[activeIndex].descriptionKey)}
               </p>
             </div>
           </div>
 
           {/* Thumbnails */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-            {galleryImages.map((image, index) => (
+            {galleryImagesKeys.map((image, index) => (
               <button
                 key={image.id}
                 onClick={() => setActiveIndex(index)}
@@ -88,7 +70,7 @@ export function GallerySection() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 <span className="absolute bottom-2 left-3 text-xs font-display font-semibold text-foreground">
-                  {image.title}
+                  {}
                 </span>
               </button>
             ))}

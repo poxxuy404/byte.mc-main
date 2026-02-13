@@ -154,7 +154,7 @@ export function Navbar() {
                 <span>{t("playNow")}</span>
 
                 <span className="ml-2 inline-flex items-center justify-center px-2 py-0.5 text-xs font-medium bg-white/10 rounded-full">
-                  LIVE
+                  {t("common.live")}
                 </span>
               </GlassButton>
             </div>
