@@ -17,7 +17,7 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [currentLang, setCurrentLang] = useState<"uz" | "ru">("uz");
+  const [currentLang, setCurrentLang] = useState<"en" | "uz" | "ru">("uz");
   const location = useLocation();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
@@ -37,11 +37,11 @@ export function Navbar() {
 
   useEffect(() => {
     // keep currentLang in sync with i18next initial language if available
-    const lang = i18n.language?.startsWith("ru") ? "ru" : "uz";
+    const lang = i18n.language?.startsWith("ru") ? "ru" : i18n.language?.startsWith("en") ? "en" : "uz";
     setCurrentLang(lang);
   }, [i18n.language]);
 
-  const changeLang = (lang: "uz" | "ru") => {
+  const changeLang = (lang: "en" | "uz" | "ru") => {
     setCurrentLang(lang);
     i18n.changeLanguage(lang);
   };
@@ -98,20 +98,40 @@ export function Navbar() {
 
           {/* Polished language pills + animated Play */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 bg-white/5 backdrop-blur rounded-full p-1 shadow-sm">
+            <div className="flex items-center gap-2 bg-white/5 backdrop-blur rounded-full p-1.5 shadow-sm border border-white/10 hover:border-white/20 transition-colors">
+              <GlassButton
+                variant={currentLang === "en" ? "primary" : "ghost"}
+                size="icon"
+                onClick={() => changeLang("en")}
+                aria-pressed={currentLang === "en"}
+                aria-label="English"
+                className="relative overflow-hidden transition-all transform hover:scale-105 focus:scale-105 duration-300"
+                title="English"
+              >
+                <span className="w-6 text-xs font-bold tracking-wider">EN</span>
+                {currentLang === "en" && (
+                  <span className="absolute -inset-px rounded-full ring-2 ring-primary/50 pointer-events-none animate-pulse" />
+                )}
+              </GlassButton>
+
+              <div className="w-px h-6 bg-white/10" />
+
               <GlassButton
                 variant={currentLang === "uz" ? "primary" : "ghost"}
                 size="icon"
                 onClick={() => changeLang("uz")}
                 aria-pressed={currentLang === "uz"}
                 aria-label="O'zbekcha"
-                className="relative overflow-hidden transition-transform transform hover:scale-105 focus:scale-105"
+                className="relative overflow-hidden transition-all transform hover:scale-105 focus:scale-105 duration-300"
+                title="O'zbekcha"
               >
-                <span className="w-6 text-xs font-semibold">UZ</span>
+                <span className="w-6 text-xs font-bold tracking-wider">UZ</span>
                 {currentLang === "uz" && (
-                  <span className="absolute -inset-px rounded-full ring-1 ring-primary/40 pointer-events-none" />
+                  <span className="absolute -inset-px rounded-full ring-2 ring-primary/50 pointer-events-none animate-pulse" />
                 )}
               </GlassButton>
+
+              <div className="w-px h-6 bg-white/10" />
 
               <GlassButton
                 variant={currentLang === "ru" ? "primary" : "ghost"}
@@ -119,11 +139,12 @@ export function Navbar() {
                 onClick={() => changeLang("ru")}
                 aria-pressed={currentLang === "ru"}
                 aria-label="Русский"
-                className="relative overflow-hidden transition-transform transform hover:scale-105 focus:scale-105"
+                className="relative overflow-hidden transition-all transform hover:scale-105 focus:scale-105 duration-300"
+                title="Русский"
               >
-                <span className="w-6 text-xs font-semibold">RU</span>
+                <span className="w-6 text-xs font-bold tracking-wider">RU</span>
                 {currentLang === "ru" && (
-                  <span className="absolute -inset-px rounded-full ring-1 ring-primary/40 pointer-events-none" />
+                  <span className="absolute -inset-px rounded-full ring-2 ring-primary/50 pointer-events-none animate-pulse" />
                 )}
               </GlassButton>
             </div>
@@ -173,15 +194,26 @@ export function Navbar() {
           </GlassButton>
 
           {/* compact language buttons on mobile */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 bg-white/5 backdrop-blur rounded-full p-1 border border-white/10">
+            <GlassButton
+              variant={currentLang === "en" ? "primary" : "ghost"}
+              size="icon"
+              onClick={() => changeLang("en")}
+              aria-pressed={currentLang === "en"}
+              aria-label="EN"
+              title="English"
+            >
+              <span className="text-xs font-bold">EN</span>
+            </GlassButton>
             <GlassButton
               variant={currentLang === "uz" ? "primary" : "ghost"}
               size="icon"
               onClick={() => changeLang("uz")}
               aria-pressed={currentLang === "uz"}
               aria-label="UZ"
+              title="O'zbekcha"
             >
-              UZ
+              <span className="text-xs font-bold">UZ</span>
             </GlassButton>
             <GlassButton
               variant={currentLang === "ru" ? "primary" : "ghost"}
@@ -189,8 +221,9 @@ export function Navbar() {
               onClick={() => changeLang("ru")}
               aria-pressed={currentLang === "ru"}
               aria-label="RU"
+              title="Русский"
             >
-              RU
+              <span className="text-xs font-bold">RU</span>
             </GlassButton>
           </div>
 
