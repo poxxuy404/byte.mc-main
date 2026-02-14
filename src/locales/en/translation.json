@@ -198,6 +198,22 @@
     "5": {
       "question": "Are there any rules I need to follow?",
       "answer": "Yes! We have server rules to ensure fair play and a positive experience. No hacking, no spam, be respectful. Check the full list with /rules in-game."
+    },
+    "6": {
+      "question": "How can I become staff?",
+      "answer": "Staff applications open periodically. Watch Discord announcements for application periods. We're looking for active and helpful community members."
+    },
+    "7": {
+      "question": "Is the server 24/7 online?",
+      "answer": "Yes! Our servers are hosted on dedicated infrastructure with 99.9% uptime. Scheduled maintenance is announced in advance."
+    },
+    "8": {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept Payme, Click, Uzcard, and international payment methods. All transactions are secure."
+    },
+    "9": {
+      "question": "How do I report a player?",
+      "answer": "Use /report in-game or contact staff through Discord with proof (screenshots/videos) of the violation."
     }
   },
   "admins": {
@@ -225,35 +241,35 @@
     },
     "cta": {
       "title": "Want to Join Our Team?",
-      "description": "We're always looking for passionate and dedicated individuals to help grow ByteMC. Apply today!",
-      "apply": "Apply Now"
+      "description": "We're always looking for dedicated players to help our community. Staff applications open periodically on Discord.",
+      "apply": "Apply Through Discord"
     }
   },
   "gallery": {
-    "titleStart": "Explore",
-    "titleHighlight": "Our World",
-    "description": "Take a look at the beautiful builds and incredible moments from our server",
-    "placeholder": "Loading gallery...",
+    "titleStart": "Server",
+    "titleHighlight": "Gallery",
+    "description": "Explore our beautifully designed worlds and game modes.",
+    "placeholder": "Gallery image",
     "images": {
       "0": {
-        "title": "Main Spawn",
-        "description": "The stunning main spawn area where adventures begin"
+        "title": "Spawn Area",
+        "description": "Our stunning main spawn with custom builds"
       },
       "1": {
-        "title": "PVP Arena",
-        "description": "Epic battles happen in our custom-built PVP arena"
+        "title": "PvP Arena",
+        "description": "Competitive battlefields for epic fights"
       },
       "2": {
-        "title": "Community Hub",
-        "description": "Where players gather to trade and socialize"
+        "title": "Survival World",
+        "description": "A vast world waiting to be explored"
       },
       "3": {
-        "title": "Survival Builds",
-        "description": "Amazing creations by our talented builder community"
+        "title": "Events",
+        "description": "Regular community events and activities"
       },
       "4": {
-        "title": "Admin Zone",
-        "description": "Behind the scenes of server management and events"
+        "title": "Trading District",
+        "description": "Player-driven economy and commerce"
       }
     }
   },
