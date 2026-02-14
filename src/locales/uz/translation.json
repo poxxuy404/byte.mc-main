@@ -88,7 +88,7 @@
     "6m": "6 oy",
     "1y": "1 yil"
   },
-  "features": {
+  "rankFeatures": {
     "exclusiveKit": "Eksklyuziv to'plam",
     "customPrefix": "Maxsus prefiks",
     "prioritySupport": "Ustuvor qo'llab-quvvatlash",

@@ -88,7 +88,7 @@
     "6m": "6 месяцев",
     "1y": "1 год"
   },
-  "features": {
+  "rankFeatures": {
     "exclusiveKit": "Эксклюзивный набор",
     "customPrefix": "Пользовательский префикс",
     "prioritySupport": "Приоритетная поддержка",

@@ -1,0 +1,301 @@
+{
+  "brand": "BYTEMC.UZ",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "prices": "Prices",
+    "admins": "Admins",
+    "faq": "FAQ"
+  },
+  "playNow": "Play Now",
+  "common": {
+    "copied": "Copied!",
+    "live": "ONLINE"
+  },
+  "notFound": {
+    "message": "Page Not Found",
+    "returnHome": "Return to Home"
+  },
+  "hero": {
+    "badge": "Premium Minecraft Server",
+    "title": "Welcome to",
+    "description": "Experience the ultimate Minecraft adventure. Unique game modes, active community, and premium features await you.",
+    "copyIP": "Copy Server IP",
+    "viewModes": "View Game Modes",
+    "stats": {
+      "players": "Players",
+      "modes": "Modes",
+      "online": "Online"
+    }
+  },
+  "features": {
+    "titleStart": "Why Choose",
+    "description": "Experience the best Minecraft server with unique features and amazing community",
+    "boxpvp": {
+      "title": "BoxPVP",
+      "description": "Engage in thrilling PVP battles with various kits and game modes"
+    },
+    "survival": {
+      "title": "Survival",
+      "description": "Explore the world and build your empire with friends"
+    },
+    "community": {
+      "title": "Community",
+      "description": "Join our friendly and active community of players"
+    },
+    "latency": {
+      "title": "Low Latency",
+      "description": "Best ping performance in Uzbekistan and Central Asia"
+    },
+    "ranking": {
+      "title": "Ranking System",
+      "description": "Compete to be on top of the leaderboards"
+    },
+    "fairplay": {
+      "title": "Fair Play",
+      "description": "Strict anti-cheat system and fair gaming environment"
+    }
+  },
+  "cta": {
+    "badge": "Ready to Start?",
+    "titleStart": "Join the",
+    "titleHighlight": "Adventure",
+    "titleEnd": "Today",
+    "description": "Thousands of players are already enjoying ByteMC. Don't miss out on the fun — start your journey now!",
+    "viewPrices": "View Prices",
+    "joinDiscord": "Join Discord"
+  },
+  "prices": {
+    "premiumRanks": "Premium Ranks",
+    "titleStart": "Our",
+    "titleHighlight": "Prices",
+    "description": "Choose a rank that fits your playstyle. All ranks include exclusive benefits.",
+    "note": "Note: These prices are for information only — purchasing through the website is not available.",
+    "exchangeRate": "💵 1,000 ByteCoin = 2,000 UZS",
+    "popular": "Popular",
+    "infoOnly": "Info Only",
+    "paymentTitle": "Payment Methods",
+    "paymentDescription": "We accept the following payment methods. All payments are made through the telegram bot @bytemcshop_bot."
+  },
+  "categories": {
+    "survival": "Survival 1-2-3-4",
+    "ranks": "Ranks",
+    "boxpvp": "BoxPVP"
+  },
+  "durations": {
+    "1m": "1 Month",
+    "3m": "3 Months",
+    "6m": "6 Months",
+    "1y": "1 Year"
+  },
+  "rankFeatures": {
+    "exclusiveKit": "Exclusive Kit",
+    "customPrefix": "Custom Prefix",
+    "prioritySupport": "Priority Support",
+    "specialCommands": "Special Commands"
+  },
+  "payment": {
+    "Payme": "Payme",
+    "Click": "Click",
+    "Uzcard": "Uzcard",
+    "Humo": "Humo"
+  },
+  "footer": {
+    "description": "Premium Minecraft server experience with unique gameplay modes, active community, and dedicated staff. Join thousands of players today.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "server": "Server",
+    "discord": "Discord",
+    "telegram": "Telegram",
+    "copyright": "All Rights Reserved"
+  },
+  "about": {
+    "hero": {
+      "badge": "Our Story",
+      "titleStart": "About",
+      "description": "ByteMC.uz was founded with a simple goal: to provide the best Minecraft server experience for players in Uzbekistan and beyond. Since launch, we've become one of the most popular servers in the region."
+    },
+    "stats": {
+      "founded": "Founded",
+      "players": "Players",
+      "uptime": "Uptime",
+      "support": "Support"
+    },
+    "values": {
+      "titleStart": "Our",
+      "titleHighlight": "Values",
+      "mission": {
+        "title": "Our Mission",
+        "description": "To create the most engaging and fair Minecraft experience for players across Central Asia."
+      },
+      "community": {
+        "title": "Community First",
+        "description": "Every decision we make prioritizes the experience and enjoyment of our players."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Constantly updating and adding new features to keep the gameplay fresh and exciting."
+      },
+      "fairplay": {
+        "title": "Fair Play",
+        "description": "Strict anti-cheat measures and active moderation ensure fair competition."
+      }
+    },
+    "journey": {
+      "titleStart": "Our",
+      "titleHighlight": "Journey",
+      "events": {
+        "0": {
+          "date": "January 2023",
+          "title": "Server Launch",
+          "description": "ByteMC.uz officially launched with Survival mode."
+        },
+        "1": {
+          "date": "March 2023",
+          "title": "BoxPVP Added",
+          "description": "Introduced our popular BoxPVP game mode."
+        },
+        "2": {
+          "date": "June 2023",
+          "title": "1000 Players",
+          "description": "Reached our first milestone of 1000 registered players."
+        },
+        "3": {
+          "date": "2024",
+          "title": "2025+ Players",
+          "description": "Became the leading Minecraft server in Uzbekistan."
+        }
+      }
+    }
+  },
+  "faq": {
+    "hero": {
+      "badge": "Got Questions?",
+      "titleStart": "Frequently Asked",
+      "titleHighlight": "Questions",
+      "description": "Find answers to common questions about ByteMC. Can't find what you're looking for? Join our Discord!"
+    },
+    "0": {
+      "question": "How do I join the server?",
+      "answer": "Open Minecraft Java or Bedrock Edition, go to Multiplayer, and add our server address: bytemc.uz. Make sure you're using a supported version."
+    },
+    "1": {
+      "question": "What Minecraft versions are supported?",
+      "answer": "We support Minecraft Java Edition 1.8 - 1.20+ and Bedrock Edition. The recommended version is 1.20 for the best experience."
+    },
+    "2": {
+      "question": "How do I purchase a rank?",
+      "answer": "Visit our Prices page and select your desired rank. You can pay using various methods including Payme, Click, and Uzcard."
+    },
+    "3": {
+      "question": "Can I transfer my rank to another account?",
+      "answer": "Rank transfers are handled on a case-by-case basis. Contact our support team through Discord for assistance."
+    },
+    "4": {
+      "question": "What if I get banned?",
+      "answer": "If you believe your ban is unjust, you can file an appeal through our Discord server. All appeals are reviewed by senior staff."
+    },
+    "5": {
+      "question": "Are there any rules I need to follow?",
+      "answer": "Yes! We have server rules to ensure fair play and a positive experience. No hacking, no spam, be respectful. Check the full list with /rules in-game."
+    }
+  },
+  "admins": {
+    "meetTeam": "Meet Our Team",
+    "titleStart": "Our",
+    "titleHighlight": "Staff",
+    "description": "Get to know the dedicated team keeping ByteMC running smoothly",
+    "categories": {
+      "owners": "Owners",
+      "administrators": "Administrators",
+      "moderators": "Moderators",
+      "helpers": "Helpers"
+    },
+    "roles": {
+      "founderCEO": "Founder & CEO",
+      "coFounder": "Co-Founder",
+      "headAdmin": "Head Admin",
+      "seniorAdmin": "Senior Admin",
+      "technicalAdmin": "Technical Admin",
+      "headMod": "Head Moderator",
+      "seniorMod": "Senior Moderator",
+      "moderator": "Moderator",
+      "helper": "Helper",
+      "trialHelper": "Trial Helper"
+    },
+    "cta": {
+      "title": "Want to Join Our Team?",
+      "description": "We're always looking for passionate and dedicated individuals to help grow ByteMC. Apply today!",
+      "apply": "Apply Now"
+    }
+  },
+  "gallery": {
+    "titleStart": "Explore",
+    "titleHighlight": "Our World",
+    "description": "Take a look at the beautiful builds and incredible moments from our server",
+    "placeholder": "Loading gallery...",
+    "images": {
+      "0": {
+        "title": "Main Spawn",
+        "description": "The stunning main spawn area where adventures begin"
+      },
+      "1": {
+        "title": "PVP Arena",
+        "description": "Epic battles happen in our custom-built PVP arena"
+      },
+      "2": {
+        "title": "Community Hub",
+        "description": "Where players gather to trade and socialize"
+      },
+      "3": {
+        "title": "Survival Builds",
+        "description": "Amazing creations by our talented builder community"
+      },
+      "4": {
+        "title": "Admin Zone",
+        "description": "Behind the scenes of server management and events"
+      }
+    }
+  },
+  "login": {
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join our community today",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "button": "Create Account",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Login here"
+    },
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Login to your account",
+      "email": "Email Address",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "button": "Login",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Register here"
+    },
+    "forgot": {
+      "back": "Back",
+      "title": "Reset Password",
+      "subtitle": "Enter your email to reset your password",
+      "email": "Email Address",
+      "button": "Send Reset Link",
+      "sent": "Reset link sent!",
+      "checkEmail": "Check your email for the reset link"
+    },
+    "verify": {
+      "title": "Verify Email",
+      "subtitle": "Enter the verification code",
+      "button": "Verify",
+      "noCode": "Didn't receive the code?",
+      "resend": "Resend code"
+    }
+  }
+}
